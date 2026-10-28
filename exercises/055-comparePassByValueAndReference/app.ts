@@ -5,8 +5,6 @@ interface ComparisonResult {
 }
 
 function comparePassByValueAndReference(input: unknown): ComparisonResult {
-  // your code here
-  return {} as ComparisonResult;
+ const copy=Array.isArray(input)?[...input]:input!==null && typeof input==="object"?{...input}:input;return {original:input,copy,sameReference:input===copy};
 }
-
 export {};

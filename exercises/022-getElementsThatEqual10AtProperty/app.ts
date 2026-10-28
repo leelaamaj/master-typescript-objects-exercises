@@ -1,6 +1,4 @@
 function getElementsThatEqual10AtProperty(obj: Record<string, unknown>, key: string): unknown[] {
-  // your code here
-  return [];
+ const values=obj[key];return Array.isArray(values)?values.filter(value=>value===10):[];
 }
-
 export {};

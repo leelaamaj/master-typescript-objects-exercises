@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function getElementsGreaterThan10AtProperty(obj, key) {
-    // your code here
-    return [];
+    const values = obj[key];
+    return Array.isArray(values) ? values.filter(value => typeof value === "number" && value > 10) : [];
 }

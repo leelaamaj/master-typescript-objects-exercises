@@ -1,6 +1,4 @@
 function getAllButLastElementOfProperty(obj: Record<string, unknown>, key: string): unknown[] {
-  // your code here
-  return [];
+ const values=obj[key];return Array.isArray(values)?values.slice(0,-1):[];
 }
-
 export {};

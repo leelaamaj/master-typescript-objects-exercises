@@ -1,26 +1,11 @@
 class PhoneNumberFormatter {
-  numbers: number[];
-  constructor(numbers: number[]) {
-    this.numbers = numbers;
-  }
-  render() {
-    // your code here
-  }
-  getAreaCode() {
-    // your code here
-  }
-  getExchangeCode() {
-    // your code here
-  }
-  getLineNumber() {
-    // your code here
-  }
-  parenthesize(string: string) {
-    // your code here
-  }
-  slice(start: number, end: number) {
-    // your code here
-  }
+ numbers:number[];
+ constructor(numbers:number[]){this.numbers=numbers;}
+ render():string{return this.parenthesize(this.getAreaCode())+" "+this.getExchangeCode()+"-"+this.getLineNumber();}
+ getAreaCode():string{return this.slice(0,3);}
+ getExchangeCode():string{return this.slice(3,6);}
+ getLineNumber():string{return this.slice(6,10);}
+ parenthesize(string:string):string{return "("+string+")";}
+ slice(start:number,end:number):string{return this.numbers.slice(start,end).join("");}
 }
-
 export {};

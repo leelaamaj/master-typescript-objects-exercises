@@ -1,6 +1,4 @@
 function addFullNameProperty(obj: Record<string, unknown>): Record<string, unknown> {
-  // your code here
-  return {};
+ obj.fullName=String(obj.firstName)+" "+String(obj.lastName); return obj;
 }
-
 export {};

@@ -1,6 +1,4 @@
 function convertObjectToList(obj: Record<string, unknown>) : unknown[][] {
-  // your code here
-  return [];
+ return Object.entries(obj);
 }
-
 export {};

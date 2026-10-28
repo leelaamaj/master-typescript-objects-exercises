@@ -1,6 +1,4 @@
 function countAllCharacters(str: string) : Record<string, number> {
-  // your code here
-  return {};
+ const counts:Record<string,number>={};for(const char of str){counts[char]=(counts[char]||0)+1;}return counts;
 }
-
 export {};

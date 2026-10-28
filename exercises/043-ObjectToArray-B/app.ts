@@ -1,6 +1,4 @@
 function listAllValues(obj: Record<string, unknown>): unknown[] {
-  // your code here
-  return [];
+ return Object.values(obj);
 }
-
 export {};

@@ -4,8 +4,6 @@ interface Book {
 }
 
 function renameBookImmutable(book: Book, newTitle: string): Book {
-  // your code here
-  return {} as Book;
+ return {...book,title:newTitle};
 }
-
 export {};

@@ -3,8 +3,6 @@ interface Person {
 }
 
 function isPersonOldEnoughToDrink(person: Person): boolean {
-  // your code here
-  return false;
+ return person.age>=21;
 }
-
 export {};

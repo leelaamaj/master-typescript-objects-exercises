@@ -1,6 +1,4 @@
 function getNthElementOfProperty(obj: Record<string, unknown>, key: string, n: number) : unknown | undefined {
-  // your code here
-  return 0;
+ const values=obj[key]; return Array.isArray(values)?values[n]:undefined;
 }
-
 export {};

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function getOddLengthWordsAtProperty(obj, key) {
-    // your code here
-    return [];
+    const values = obj[key];
+    return Array.isArray(values) ? values.filter((value) => typeof value === "string" && value.length % 2 !== 0) : [];
 }

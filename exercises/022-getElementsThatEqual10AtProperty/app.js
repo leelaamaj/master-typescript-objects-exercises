@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 function getElementsThatEqual10AtProperty(obj, key) {
-    // your code here
-    return [];
+    const values = obj[key];
+    return Array.isArray(values) ? values.filter(value => value === 10) : [];
 }

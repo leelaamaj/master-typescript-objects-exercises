@@ -9,8 +9,6 @@ interface InventoryItem {
 }
 
 function renderInventory(inventory: InventoryItem[]): unknown[][] {
-  // your code here
-  return [];
+ const rows:unknown[][]=[];for(const designer of inventory){for(const shoe of designer.shoes){rows.push([designer.name,shoe.name,shoe.price]);}}return rows;
 }
-
 export {};
